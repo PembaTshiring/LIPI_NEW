@@ -1,0 +1,140 @@
+import React, { Component } from 'react'
+import { Text, 
+  View,
+  Image,
+  StatusBar,
+  ImageBackground,
+  TouchableOpacity,
+  StyleSheet,
+  Dimensions,
+  ScrollView,
+  Animated,
+  Easing, 
+  textSize
+ } from 'react-native'
+ import { Constants, Audio } from 'expo';
+
+const { width, height } = Dimensions.get("window");
+
+export default class Vowels extends Component {
+  constructor () {
+    super()
+    this.animatedValue = new Animated.Value(0)
+    
+}
+componentDidMount() {
+    StatusBar.setHidden(true);
+    this.animate()
+}
+static navigationOptions = {
+    headerVisible: false,
+    header: null
+};
+
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 2000,
+      easing: Easing.linear
+    }
+  ).start(() => this.animate())
+}
+  render() {
+    const textSize = this.animatedValue.interpolate({
+      inputRange: [0, 0.5, 1],
+      outputRange: [18, 150, 18]
+    })
+    const marginLeft = this.animatedValue.interpolate({
+      inputRange: [0, 1],
+      outputRange: [150, 150]
+    })
+
+    const marginLefts = this.animatedValue.interpolate({
+      inputRange: [0, 1],
+      outputRange: [0, 150]
+    })
+    return (
+      <View style={styles.container}>
+       <ImageBackground  style={styles.img}
+       source={require('./app/assets/images/background/bg1.jpg')}>
+       <View style={styles.overlay}>
+       
+       <Animated.Image source={require('./app/assets/images/characters/cloud.png')}
+        style={{
+          marginRight: marginLeft,
+          marginTop: 10,
+          height: 70,
+          width: 110,
+          }} >
+          </Animated.Image>
+
+          <Animated.Image source={require('./app/assets/images/characters/cloud.png')}
+        style={{
+          marginLeft: marginLefts, 
+          marginTop: 10,
+          height: 70,
+          width: 110,
+          }}>
+          </Animated.Image>
+
+        </View>  
+        <View style={styles.inner}>
+          <Animated.Text
+        style={{
+          fontSize: textSize,
+          marginTop: 10,
+          color: 'green'}} >
+          LIPI
+      </Animated.Text>
+      </View>
+         <TouchableOpacity onPress={() => this.props.navigation.navigate()}>
+                  <Image source={require('./app/assets/images/buttons/playButton.png')} style={styles.button}/>
+                </TouchableOpacity>
+
+
+       </ImageBackground>
+
+       
+      </View>
+      
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+    
+  txt:{
+    fontFamily: 'notoserif',
+    fontSize: 120,
+    textAlign: "center",
+    alignContent: 'center',
+  },
+  img:{
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: width,
+    height:height
+  },
+  button:{
+   marginLeft: 540,
+    width: 96, 
+        height: 48
+  },
+  overlay:{
+    flex:1,
+    flexDirection: 'row',
+  },
+  inner:{
+    flex:1,
+    flexDirection: 'row',
+  }
+});
