@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default class App extends React.Component {
+export default class MainPage extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -12,7 +12,7 @@ componentDidMount() {
     return (
 
       <View style={styles.container}>        
-      <ImageBackground source={require('./app/assets/images/background/bg1.jpg')} style={styles.bg}>
+      <ImageBackground source={require('../assets/images/background/bg1.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" />
@@ -26,7 +26,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/levels/letter.png')}
+          source={require('../assets/images/levels/letter.png')}
             />
             </TouchableOpacity>
         </View>
@@ -38,7 +38,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/levels/words.png')}
+          source={require('../assets/images/levels/words.png')}
             />
           </TouchableOpacity>
           </View>
@@ -50,7 +50,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/levels/vowels.png')}
+          source={require('../assets/images/levels/vowels.png')}
             />
             </TouchableOpacity>
             </View>
@@ -62,7 +62,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/levels/numbers.png')}
+          source={require('../assets/images/levels/numbers.png')}
             />
             </TouchableOpacity>
             </View>
@@ -74,7 +74,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/levels/story.png')}
+          source={require('../assets/images/levels/story.png')}
             />
             </TouchableOpacity>
             </View>
@@ -86,7 +86,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
               <Image style={styles.level}
-          source={require('./app/assets/images/levels/rhymes.png')}
+          source={require('../assets/images/levels/rhymes.png')}
             />
             </TouchableOpacity>
             </View>

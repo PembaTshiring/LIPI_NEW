@@ -14,7 +14,7 @@ import { Text,
 
 const { width, height } = Dimensions.get("window");
 
-export default class MainPage extends Component {
+export default class SplashScreen extends Component {
     
     constructor () {
         super()
@@ -69,19 +69,19 @@ animate () {
       })
     return (
       <View>
-      <ImageBackground source={require("./app/assets/images/background/bg1.jpg")} style={styles.bg}>
+      <ImageBackground source={require("../assets/images/background/bg1.jpg")} style={styles.bg}>
         <View style={styles.container}>
 
         <View style={styles.float}>
            <Animated.Image
-           source={require("./app/assets/images/characters/cloud.png")}
+           source={require("../assets/images/characters/cloud.png")}
         style={{
           marginRight:movingMargin,
           height: 100,
           width: 160,
           }} />
           { <Animated.Image
-           source={require("./app/assets/images/characters/cloud.png")}
+           source={require("../assets/images/characters/cloud.png")}
         style={{
           marginLeft:movingMargins,
           height: 100,
@@ -100,7 +100,7 @@ animate () {
           </View>
         <View style={styles.overlay}>
                 <TouchableOpacity onPress={() => this.props.navigation.navigate("Vowels")}>
-                  <Image source={require("./app/assets/images/buttons/playButton.png")} style={styles.btn}/>
+                  <Image source={require("../assets/images/buttons/playButton.png")} style={styles.btn}/>
                 </TouchableOpacity>
               </View>
           </View>
