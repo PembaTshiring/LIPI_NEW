@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground, StatusBar } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default class App extends React.Component {
