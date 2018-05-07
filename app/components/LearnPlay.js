@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackgr
 import { Ionicons } from '@expo/vector-icons';
 import * as Progress from 'react-native-progress';
 
-export default class App extends React.Component {
+export default class LearnPlay extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -12,7 +12,7 @@ componentDidMount() {
     return (
 
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg2.jpg')} style={styles.bg}>
+      <ImageBackground source={require('../assets/images/background/bg2.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -26,7 +26,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/buttons/learn.png')}
+          source={require('../assets/images/buttons/learn.png')}
             />
             </TouchableOpacity>              
             <Progress.Bar style={styles.progressBar} progress={0.3} width={null} height={15} 
@@ -40,7 +40,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/buttons/play.png')}
+          source={require('../assets/images/buttons/play.png')}
             />
           </TouchableOpacity>
           <Progress.Bar style={styles.progressBar} progress={0.5} width={null} height={15} 
