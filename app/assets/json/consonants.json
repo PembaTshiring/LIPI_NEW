@@ -1,0 +1,103 @@
+{"quiz" : {
+    "quiz1" : {
+      "question1" : {
+        "correctoption" : "option1",
+        "options" : {
+          "option1" : "../images/letters/4.png",
+          "option2" : "../images/letters/23.png",
+          "option3" : "../images/letters/8.png"
+        },
+        "question" : "../images/words/house.png"
+      },
+      "question2" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/letters/35.png",
+            "option2" : "../images/letters/1.png",
+            "option3" : "../images/letters/9.png"
+          },
+        "question" : "../images/words/flag.png"
+      },
+
+      "question3" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/letters/34.png",
+            "option2" : "../images/letters/2.png",
+            "option3" : "../images/letters/24.png"
+          },
+          "question" : "../images/words/kharyo.png"
+      },
+
+      "question4" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/letters/32.png",
+            "option2" : "../images/letters/21.png",
+            "option3" : "../images/letters/14.png"
+          },
+        "question" : "../images/words/pareywa.png"
+      },
+
+      "question5" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/letters/18.png",
+            "option2" : "../images/letters/27.png",
+            "option3" : "../images/letters/32.png"
+          },
+        "question" : "../images/words/sarpo.png"
+      },
+
+      "question6" : {
+        "correctoption" : "option1",
+        "options" : {
+            "option1" : "../images/letters/1.png",
+            "option2" : "../images/letters/26.png",
+            "option3" : "../images/letters/22.png"
+          },
+        "question" : "../images/words/kaxhuwa.png"
+      },
+
+      "question7" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/letters/14.png",
+            "option2" : "../images/letters/36.png",
+            "option3" : "../images/letters/22.png"
+          },
+        "question" : "../images/words/palphool.png"
+      },
+
+      "question8" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/letters/14.png",
+            "option2" : "../images/letters/8.png",
+            "option3" : "../images/letters/28.png"
+          },
+        "question" : "../images/words/jarayo.png"
+      },
+
+      "question9" : {
+        "correctoption" : "option1",
+        "options" : {
+            "option1" : "../images/letters/18.png",
+            "option2" : "../images/letters/24.png",
+            "option3" : "../images/letters/4.png"
+          },
+        "question" : "../images/words/Daraj.png"
+      },
+
+      "question10" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/letters/11.png",
+            "option2" : "../images/letters/21.png",
+            "option3" : "../images/letters/28.png"
+          },
+        "question" : "../images/words/lasun.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{"quiz" : {
+    "quiz1" : {
+      "question1" : {
+        "correctoption" : "option1",
+        "options" : {
+          "option1" : "../images/consonants_vowels_sound/5a.png",
+          "option2" : "../images/consonants_vowels_sound/11a.png",
+          "option3" : "../images/consonants_vowels_sound/7a.png"
+        },
+        "question" : "sound file ko location च"
+      },
+      "question2" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/35f.png",
+            "option2" : "../images/consonants_vowels_sound/34j.png",
+            "option3" : "../images/consonants_vowels_sound/32j.png"
+          },
+        "question" : "सौ"
+      },
+
+      "question3" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/24g.png",
+            "option2" : "../images/consonants_vowels_sound/36d.png",
+            "option3" : "../images/consonants_vowels_sound/36f.png"
+          },
+          "question" : "ज्ञ + इ(arko)"
+      },
+
+      "question4" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/29c.png",
+            "option2" : "../images/consonants_vowels_sound/13g.png",
+            "option3" : "../images/consonants_vowels_sound/19c.png"
+          },
+        "question" : "ढ + ए "
+      },
+
+      "question5" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/15a.png",
+            "option2" : "../images/consonants_vowels_sound/26a.png",
+            "option3" : "../images/consonants_vowels_sound/35a.png"
+          },
+        "question" : "त्र"
+      },
+
+      "question6" : {
+        "correctoption" : "option1",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/34a.png",
+            "option2" : "../images/consonants_vowels_sound/9f.png",
+            "option3" : "../images/consonants_vowels_sound/7a.png"
+          },
+        "question" : "क्ष"
+      },
+
+      "question7" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/10e.png",
+            "option2" : "../images/consonants_vowels_sound/4a.png",
+            "option3" : "../images/consonants_vowels_sound/16c.png"
+          },
+        "question" : "थ + इ"
+      },
+
+      "question8" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/14b.png",
+            "option2" : "../images/consonants_vowels_sound/16e.png",
+            "option3" : "../images/consonants_vowels_sound/33h.png"
+          },
+        "question" : "है"
+      },
+
+      "question9" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/27c.png",
+            "option2" : "../images/consonants_vowels_sound/11a.png",
+            "option3" : "../images/consonants_vowels_sound/10a.png"
+          },
+        "question" : "ठ"
+      },
+
+      "question10" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/22f.png",
+            "option2" : "../images/consonants_vowels_sound/1d.png",
+            "option3" : "../images/consonants_vowels_sound/23e.png"
+          },
+        "question" : "भ + u"
+      }
+    }
+  }
+}

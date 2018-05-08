@@ -1,0 +1,113 @@
+{"quiz" : {
+    "quiz1" : {
+      "question1" : {
+        "correctoption" : "option1",
+        "options" : {
+          "option1" : "../images/consonants_vowels_sound/3b.png",
+          "option2" : "../images/consonants_vowels_sound/10d.png",
+          "option3" : "../images/consonants_vowels_sound/34c.png"
+        },
+        "question" : "_ ई",
+        "image": "../images/words/cow.png"
+      },
+      "question2" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/35f.png",
+            "option2" : "../images/consonants_vowels_sound/11b.png",
+            "option3" : "../images/consonants_vowels_sound/15b.png"
+          },
+        "question" : "छा _",
+        "image": "../images/words/xhata.png"
+      },
+
+      "question3" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/24g.png",
+            "option2" : "../images/consonants_vowels_sound/26g.png",
+            "option3" : "../images/consonants_vowels_sound/7f.png"
+          },
+          "question" : "प _ वा",
+          "image": "../images/words/pareywa.png"
+      },
+
+      "question4" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/29c.png",
+            "option2" : "../images/consonants_vowels_sound/20d.png",
+            "option3" : "../images/consonants_vowels_sound/19c.png"
+          },
+        "question" : "टो _",
+        "image": "../images/words/topi.png"
+      },
+
+      "question5" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/9d.png",
+            "option2" : "../images/consonants_vowels_sound/26a.png",
+            "option3" : "../images/consonants_vowels_sound/25i.png"
+          },
+        "question" : "_ म री",
+        "image": "../images/words/yamari.png"
+      },
+
+      "question6" : {
+        "correctoption" : "option1",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/6e.png",
+            "option2" : "../images/consonants_vowels_sound/9f.png",
+            "option3" : "../images/consonants_vowels_sound/7a.png"
+          },
+        "question" : "क _ वा",
+        "image": "../images/words/kaxhuwa.png"
+      },
+
+      "question7" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/14l.png",
+            "option2" : "../images/consonants_vowels_sound/4a.png",
+            "option3" : "../images/consonants_vowels_sound/26d.png"
+          },
+        "question" : "बा सु _",
+        "image": "../images/words/Basuri.png"
+      },
+
+      "question8" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/14b.png",
+            "option2" : "../images/consonants_vowels_sound/8c.png",
+            "option3" : "../images/consonants_vowels_sound/27b.png"
+          },
+        "question" : "त ब _",
+        "image": "../images/words/tabala.png"
+      },
+
+      "question9" : {
+        "correctoption" : "option2",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/27c.png",
+            "option2" : "../images/consonants_vowels_sound/29a.png",
+            "option3" : "../images/consonants_vowels_sound/6a.png"
+          },
+        "question" : "न रि _ ल",
+        "image": "../images/words/naribal.png"
+      },
+
+      "question10" : {
+        "correctoption" : "option3",
+        "options" : {
+            "option1" : "../images/consonants_vowels_sound/11g.png",
+            "option2" : "../images/consonants_vowels_sound/21d.png",
+            "option3" : "../images/consonants_vowels_sound/24a.png"
+          },
+        "question" : "_ कै",
+        "image": "../images/words/makai.png"
+      }
+    }
+  }
+}
