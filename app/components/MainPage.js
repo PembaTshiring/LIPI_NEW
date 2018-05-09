@@ -50,7 +50,7 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('../assets/images/levels/vowels.png')}
+          source={require('../assets/images/levels/sentence.png')}
             />
             </TouchableOpacity>
             </View>
