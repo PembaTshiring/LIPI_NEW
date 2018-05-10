@@ -5,25 +5,30 @@ import * as Progress from 'react-native-progress';
 
 export default class LearnPlay extends React.Component {
   //hiding statusBar
-componentDidMount() {
-  StatusBar.setHidden(true);
-}
+  componentDidMount() {
+    StatusBar.setHidden(true);
+    this.setState({isHidden: false})
+  }
+  static navigationOptions = {
+    headerVisible: false,
+    header:null
+  };
   render() {
     return (
 
       <View style={styles.container}>
       <ImageBackground source={require('../assets/images/background/bg2.jpg')} style={styles.bg}>
-        <View style={styles.top}>
+        <TouchableOpacity style={styles.top} onPress={() => this.props.navigation.navigate("MainPage")}>
           <View style={styles.setting}>
-          <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
+          <Ionicons name='md-home' size={33} color="#fff" borderWidth={3} />
         </View>
-      </View>
+      </TouchableOpacity>
         <View style={styles.center}>
           <View style={styles.menu1}>
             <View style={styles.menuInner}>
             <TouchableOpacity
          style={styles.button}
-         onPress={this.onPress}
+         onPress={()=>this.props.navigation.navigate("LettersLearn")}
        >
             <Image style={styles.level}
           source={require('../assets/images/buttons/learn.png')}
@@ -73,7 +78,7 @@ const styles = StyleSheet.create({
   setting:{
     height: 30,
     width:30,
-    marginRight: 15,
+    // marginRight: 15,
     alignSelf: 'flex-end', 
   },
   center: {

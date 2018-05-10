@@ -1,21 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import * as Progress from 'react-native-progress';
 
-export default class App extends React.Component {
+export default class LetterMenu extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
-  // this.setState({isHidden: false})
 }
   render() {
     return (
-
-      <View style={styles.container}>        
-      <ImageBackground source={require('./app/assets/images/background/bg3.jpg')} style={styles.bg}>
+      <View style={styles.container}>
+      <ImageBackground source={require('../assets/images/background/bg4.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
-          <Ionicons name='md-settings' size={33} color="#fff" />
+          <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
         </View>
       </View>
         <View style={styles.center}>
@@ -26,9 +25,9 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/buttons/names.png')}
+          source={require('../assets/images/buttons/vowels.png')}
             />
-            </TouchableOpacity>
+            </TouchableOpacity>                         
         </View>
           </View>
         <View style={styles.menu1}>
@@ -38,39 +37,25 @@ componentDidMount() {
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/buttons/days.png')}
+          source={require('../assets/images/buttons/consonants.png')}
             />
           </TouchableOpacity>
+         
           </View>
-        </View>
-        <View style={styles.menu1}>
+        </View>           
+        <View style={styles.menu2}>
             <View style={styles.menuInner}>
             <TouchableOpacity
          style={styles.button}
          onPress={this.onPress}
        >
             <Image style={styles.level}
-          source={require('./app/assets/images/buttons/colors.png')}
-            />
-            </TouchableOpacity>
-        </View>
-          </View>
-        <View style={styles.menu1}>
-            <View style={styles.menuInner}>
-            <TouchableOpacity
-         style={styles.button}
-         onPress={this.onPress}
-       >
-            <Image style={styles.level}
-          source={require('./app/assets/images/buttons/persons.png')}
+          source={require('../assets/images/buttons/vowelsandcon.png')}
             />
           </TouchableOpacity>
+         
           </View>
-        </View>
-
-  
-  
-          
+        </View>  
         </View>
         </ImageBackground>
       </View>
@@ -105,20 +90,38 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     padding: 5,
     justifyContent:'center',
+    alignContent:'center',
   },
   menu1:{
-    height: '45%',
-    width:'45%',
-    padding: 5,    
+    height: '42%',
+    width:'50%',
+    padding: 10,
+    justifyContent:'center',
+    alignContent:'center', 
+  },
+  menu2:{
+    height: '43%',
+    width:'70%',
+    padding: 10,
+    justifyContent:'center',
+    alignContent:'center', 
   },
   menuInner:{
     flex: 1,
+    justifyContent:'center',
+    alignContent:'center', 
   },
   level:{
     width: '100%',
     height: '100%',
     resizeMode: Image.resizeMode.contain,
   },
-  
+  progressBar:{
+    borderWidth: 2,
+    borderRadius: 0,
+    borderRadius: 4,
+    
+    
+  },
   
 });

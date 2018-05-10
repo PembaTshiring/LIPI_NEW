@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default class App extends React.Component {
+export default class Vowels extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -11,7 +11,7 @@ componentDidMount() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg4.jpg')} style={styles.bg}>
+      <ImageBackground source={require('../assets/images/background/bg4.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -22,46 +22,46 @@ componentDidMount() {
         <ScrollView>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/1.png')}
+          source={require('../assets/images/vowels/1.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/2.png')}
+          source={require('../assets/images/vowels/2.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/3.png')}
+          source={require('../assets/images/vowels/3.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/4.png')}
+          source={require('../assets/images/vowels/4.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/5.png')}
+          source={require('../assets/images/vowels/5.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/6.png')}
+          source={require('../assets/images/vowels/6.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/7.png')}
+          source={require('../assets/images/vowels/7.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/8.png')}
+          source={require('../assets/images/vowels/8.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/9.png')}
+          source={require('../assets/images/vowels/9.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/10.png')}
+          source={require('../assets/images/vowels/10.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/11.png')}
+          source={require('../assets/images/vowels/11.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/vowels/12.png')}
+          source={require('../assets/images/vowels/12.png')}
             />
         </View>
        
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   setting:{
     height: 30,
     width:30,
-    marginRight: 15,
+    // marginRight: 15,
     alignSelf: 'flex-end', 
   },
   content:{
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     height: 100,
     width: 100,
     marginLeft: 30,
-    marginRight: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
   },

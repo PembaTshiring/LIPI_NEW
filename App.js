@@ -2,13 +2,23 @@ import React from 'react';
 import { StyleSheet, 
   Text, 
   View } from 'react-native';
-// import { StackNavigator } from "react-navigation";
+import { StackNavigator } from "react-navigation";
 
-import SplashScreen from "./app/components/SplashScreen";
-import MainPage from "./app/components/MainPage";
-import Menu from "./app/components/Menu";
+import AboutUs from "./app/components/AboutUs";
+import Color from "./app/components/Color";
+import Consonants from "./app/components/Consonants";
 import LearnPlay from "./app/components/LearnPlay";
-import WordsLearn from "./app/components/WordsLearn";
+import MainPage from "./app/components/MainPage";
+import Name from "./app/components/Name";
+import Quiz from "./app/components/Quiz";
+import Rhymes from "./app/components/Rhymes";
+import Setting from "./app/components/Setting";
+import SplashScreen from "./app/components/SplashScreen";
+import Vowels from "./app/components/Vowels";
+import LettersLearn from "./app/components/LettersLearn";
+import LetterMenu from "./app/components/LetterMenu";
+
+
 
 export  class App extends React.Component {
   render() {
@@ -42,10 +52,16 @@ export default App = StackNavigator({
       title: "MainPage"
     }
   },
-  Menu: {
-    screen: Menu,
+  Consonants: {
+    screen: Consonants,
     navigationOptions: {
-      title: "Menu"
+      title: "Consonants"
+    }
+  },
+  AboutUs: {
+    screen: AboutUs,
+    navigationOptions: {
+      title: "AboutUs"
     }
   },
   LearnPlay: {
@@ -54,10 +70,52 @@ export default App = StackNavigator({
       title: "LearnPlay"
     }
   },
-  WordsLearn: {
-    screen: WordsLearn,
+  LettersLearn: {
+    screen: LettersLearn,
     navigationOptions: {
-      title: "WordsLearn"
+      title: "LettersLearn"
     }
-  }
+  },
+  Setting: {
+    screen: Setting,
+    navigationOptions: {
+      title: "Setting"
+    }
+  },
+  Quiz: {
+    screen: Quiz,
+    navigationOptions: {
+      title: "Quiz"
+    }
+  },
+  Rhymes: {
+    screen: Rhymes,
+    navigationOptions: {
+      title: "Rhymes"
+    }
+  },
+  Color: {
+    screen: Color,
+    navigationOptions: {
+      title: "Color"
+    }
+  },
+  Vowels: {
+    screen: Vowels,
+    navigationOptions: {
+      title: "Vowels"
+    }
+  },
+  LearnPlay: {
+    screen: LearnPlay,
+    navigationOptions: {
+      title: "LearnPLay"
+    }
+  },
+  LetterMenu: {
+    screen: LetterMenu,
+    navigationOptions: {
+      title: "LetterMenu"
+    }
+  },
 });

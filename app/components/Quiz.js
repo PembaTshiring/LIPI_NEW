@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default class App extends React.Component {
+export default class Quiz extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -11,7 +11,7 @@ componentDidMount() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg1.jpg')} style={styles.bg}>
+      <ImageBackground source={require('../assets/images/background/bg1.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -22,7 +22,7 @@ componentDidMount() {
        
         <View style={styles.imageTop}>     
         <Image style={styles.imageMain}
-          source={require('./app/assets/images/vowels/1.png')}
+          source={require('../assets/images/vowels/1.png')}
             />
             <TouchableOpacity>
             <View style={styles.sound}>
@@ -33,29 +33,29 @@ componentDidMount() {
         <View style={styles.image}>     
             <TouchableOpacity>
             <Image style={styles.imageIn1}
-          source={require('./app/assets/images/vowels/5.png')}
+          source={require('../assets/images/vowels/5.png')}
             />
             </TouchableOpacity>
             <TouchableOpacity>
             <Image style={styles.imageIn2}
-          source={require('./app/assets/images/vowels/6.png')}
+          source={require('../assets/images/vowels/6.png')}
             />
             </TouchableOpacity>
         </View>
         <View style={styles.image}>    
           <TouchableOpacity>
         <Image style={styles.imageIn3}
-          source={require('./app/assets/images/vowels/7.png')}
+          source={require('../assets/images/vowels/7.png')}
             />
             </TouchableOpacity> 
             <TouchableOpacity>
             <Image style={styles.imageIn4}
-          source={require('./app/assets/images/vowels/8.png')}
+          source={require('../assets/images/vowels/8.png')}
             />
             </TouchableOpacity>
             <TouchableOpacity>
             <Image style={styles.imageIn5}
-          source={require('./app/assets/images/vowels/9.png')}
+          source={require('../assets/images/vowels/9.png')}
             />
             </TouchableOpacity>
         </View>
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   setting:{
     height: 30,
     width:30,
-    marginRight: 15,
+    // marginRight: 15,
     alignSelf: 'flex-end', 
   },
   content:{
@@ -121,8 +121,8 @@ const styles = StyleSheet.create({
   imageIn1:{
     height: 90,
     width: 90,
-    marginLeft: 30,
-    marginRight: 30,
+    // marginLeft: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
     transform: [{ rotate: '20deg'}],
@@ -132,8 +132,8 @@ const styles = StyleSheet.create({
   imageIn2:{
     height: 90,
     width: 90,
-    marginLeft: 30,
-    marginRight: 30,
+    // marginLeft: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
     transform: [{ rotate: '-10deg'}],
@@ -143,8 +143,8 @@ const styles = StyleSheet.create({
   imageIn3:{
     height: 90,
     width: 90,
-    marginLeft: 30,
-    marginRight: 30,
+    // marginLeft: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
     transform: [{ rotate: '2deg'}],
@@ -154,8 +154,8 @@ const styles = StyleSheet.create({
   imageIn4:{
     height: 90,
     width: 90,
-    marginLeft: 30,
-    marginRight: 30,
+    // marginLeft: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
     transform: [{ rotate: '10deg'}],
@@ -165,8 +165,8 @@ const styles = StyleSheet.create({
   imageIn5:{
     height: 90,
     width: 90,
-    marginLeft: 30,
-    marginRight: 30,
+    // marginLeft: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
     transform: [{ rotate: '-2deg'}],
@@ -176,8 +176,8 @@ const styles = StyleSheet.create({
   imageMain:{
     height: 100,
     width: 150,
-    marginLeft: 30,
-    marginRight: 30,
+    // marginLeft: 30,
+    // marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#FBC02D',
     borderWidth: 1,

@@ -7,7 +7,7 @@ import {
 } 
 from 'react-native'
 
-export default Switch = (props) => {
+export default Switch1 = (props) => {
    return (
       <View style = {styles.container}>
       <Text>Music</Text>

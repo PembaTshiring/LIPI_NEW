@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackgr
 import { Ionicons } from '@expo/vector-icons';
 import * as Progress from 'react-native-progress';
 
-export default class App extends React.Component {
+export default class Consonants extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -12,7 +12,7 @@ componentDidMount() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg5.jpg')} style={styles.bg}>
+      <ImageBackground source={require('../assets/images/background/bg5.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -23,126 +23,126 @@ componentDidMount() {
         <ScrollView>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/1.png')}
+          source={require('../assets/images/letters/1.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/2.png')}
+          source={require('../assets/images/letters/2.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/3.png')}
+          source={require('../assets/images/letters/3.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/4.png')}
+          source={require('../assets/images/letters/4.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/5.png')}
+          source={require('../assets/images/letters/5.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/6.png')}
+          source={require('../assets/images/letters/6.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/7.png')}
+          source={require('../assets/images/letters/7.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/8.png')}          
+          source={require('../assets/images/letters/8.png')}          
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/9.png')}
+          source={require('../assets/images/letters/9.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/10.png')}          
+          source={require('../assets/images/letters/10.png')}          
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/11.png')}
+          source={require('../assets/images/letters/11.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/12.png')}
+          source={require('../assets/images/letters/12.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/13.png')}
+          source={require('../assets/images/letters/13.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/14.png')}
+          source={require('../assets/images/letters/14.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/15.png')}
+          source={require('../assets/images/letters/15.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/16.png')}
+          source={require('../assets/images/letters/16.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/17.png')}
+          source={require('../assets/images/letters/17.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/18.png')}          
+          source={require('../assets/images/letters/18.png')}          
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/19.png')}
+          source={require('../assets/images/letters/19.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/20.png')}          
+          source={require('../assets/images/letters/20.png')}          
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/21.png')}
+          source={require('../assets/images/letters/21.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/22.png')}
+          source={require('../assets/images/letters/22.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/23.png')}
+          source={require('../assets/images/letters/23.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/24.png')}
+          source={require('../assets/images/letters/24.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/25.png')}
+          source={require('../assets/images/letters/25.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/26.png')}
+          source={require('../assets/images/letters/26.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/27.png')}
+          source={require('../assets/images/letters/27.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/28.png')}          
+          source={require('../assets/images/letters/28.png')}          
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/29.png')}
+          source={require('../assets/images/letters/29.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/30.png')}          
+          source={require('../assets/images/letters/30.png')}          
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/31.png')}
+          source={require('../assets/images/letters/31.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/32.png')}
+          source={require('../assets/images/letters/32.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/33.png')}
+          source={require('../assets/images/letters/33.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/34.png')}
+          source={require('../assets/images/letters/34.png')}
             />
             <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/35.png')}
+          source={require('../assets/images/letters/35.png')}
             />
         </View>
         <View style={styles.image}>     
         <Image style={styles.imageIn}
-          source={require('./app/assets/images/letters/36.png')}
+          source={require('../assets/images/letters/36.png')}
             />            
         </View>
         </ScrollView> 
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
   setting:{
     height: 30,
     width:30,
-    marginRight: 15,
+    // marginRight: 15,
     alignSelf: 'flex-end', 
   },
   content:{
@@ -191,8 +191,8 @@ const styles = StyleSheet.create({
   imageIn:{
     height: 100,
     width: 100,
-    marginLeft: 5,
-    marginRight: 5,
+    // marginLeft: 5,
+    // marginRight: 5,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
   },

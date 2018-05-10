@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackgr
 import { Ionicons } from '@expo/vector-icons';
 import * as Animatable from 'react-native-animatable';
 
-export default class App extends React.Component {
+export default class Rhymes extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -43,7 +43,7 @@ render() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg.jpg')} style={styles.bg}>
+      <ImageBackground source={require('../assets/images/background/bg.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -76,12 +76,12 @@ render() {
        <View style={styles.image}>
        <Animatable.Text animation="slideInUp" iterationCount={100} direction="alternate">
        <Image style={styles.imageIn}
-          source={require('./app/assets/images/characters/head.png')}
+          source={require('../assets/images/characters/head.png')}
             />
          </Animatable.Text>
          <Animatable.Text animation="slideInUp" iterationCount={100} direction="alternate">
        <Image style={styles.imageIn}
-          source={require('./app/assets/images/characters/head.png')}
+          source={require('../assets/images/characters/head.png')}
             />
          </Animatable.Text>
          </View>
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   setting:{
     height: 30,
     width:30,
-    marginRight: 15,
+    // marginRight: 15,
     alignSelf: 'flex-end', 
   },
   content:{
