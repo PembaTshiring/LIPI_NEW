@@ -11,7 +11,7 @@ componentDidMount() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg1.jpg')} style={styles.bg}>
+      <ImageBackground source={require('./app/assets/images/background/bg3.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -19,43 +19,43 @@ componentDidMount() {
         </View>
         <View style={styles.content}>            
                        
+   
+        <View style={styles.imageTop}>  
        
-        <View style={styles.imageTop}>     
         <Image style={styles.imageMain}
-          source={require('./app/assets/images/vowels/1.png')}
-            />
+          source={require('./app/assets/images/characters/panda.png')}
+            />     
             <TouchableOpacity>
-            <View style={styles.sound}>
-            <Ionicons name='md-musical-note' size={33} color="#00796B" borderWidth={3} />
+            <View style={styles.dialogBox}>
+              <Text style={styles.text}>What is your name ?</Text>
             </View>
-            </TouchableOpacity>
+            </TouchableOpacity>  
         </View>
-        <View style={styles.image}>     
-            <TouchableOpacity>
-            <Image style={styles.imageIn1}
-          source={require('./app/assets/images/vowels/5.png')}
-            />
-            </TouchableOpacity>
-            <TouchableOpacity>
-            <Image style={styles.imageIn2}
-          source={require('./app/assets/images/vowels/6.png')}
-            />
-            </TouchableOpacity>
+        <View style={styles.image}> 
+            <View style={styles.blank}></View>
+            <View style={styles.blank}></View>
+            <View style={styles.blank}></View>
+            <View style={styles.blank}></View>
         </View>
         <View style={styles.image}>    
           <TouchableOpacity>
-        <Image style={styles.imageIn3}
+        <Image style={styles.imageIn}
           source={require('./app/assets/images/vowels/7.png')}
             />
             </TouchableOpacity> 
             <TouchableOpacity>
-            <Image style={styles.imageIn4}
+            <Image style={styles.imageIn}
           source={require('./app/assets/images/vowels/8.png')}
             />
             </TouchableOpacity>
             <TouchableOpacity>
-            <Image style={styles.imageIn5}
+            <Image style={styles.imageIn}
           source={require('./app/assets/images/vowels/9.png')}
+            />
+            </TouchableOpacity>
+            <TouchableOpacity>
+            <Image style={styles.imageIn}
+          source={require('./app/assets/images/vowels/8.png')}
             />
             </TouchableOpacity>
         </View>
@@ -110,6 +110,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
 
   },
+  dialogBox:{
+    height: 100,
+    width: 200,
+    marginLeft: 10,
+    marginRight: 10,
+    backgroundColor: '#fff',
+    borderRadius: 60,
+    borderWidth: 1,
+    borderColor: '#000',
+    justifyContent:'center',
+    alignItems: 'center',
+  },
+  text:{
+    fontSize: 20,
+    fontWeight:'bold',
+  },
   sound:{
     height:50,
     width:50,
@@ -118,66 +134,30 @@ const styles = StyleSheet.create({
     alignItems: 'center',
 
   },
-  imageIn1:{
-    height: 90,
-    width: 90,
+  imageIn:{
+    height: 80,
+    width: 80,
     marginLeft: 30,
     marginRight: 30,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#fff',
-    transform: [{ rotate: '20deg'}],
     borderWidth: 1,
     borderColor: '#000',
   },
-  imageIn2:{
-    height: 90,
-    width: 90,
-    marginLeft: 30,
-    marginRight: 30,
-    resizeMode: Image.resizeMode.contain,
+  blank:{
+    height: 80,
+    width: 80,
+    marginLeft: 10,
+    marginRight: 10,
     backgroundColor: '#fff',
-    transform: [{ rotate: '-10deg'}],
-    borderWidth: 1,
-    borderColor: '#000',
-  },
-  imageIn3:{
-    height: 90,
-    width: 90,
-    marginLeft: 30,
-    marginRight: 30,
-    resizeMode: Image.resizeMode.contain,
-    backgroundColor: '#fff',
-    transform: [{ rotate: '2deg'}],
-    borderWidth: 1,
-    borderColor: '#000',
-  },
-  imageIn4:{
-    height: 90,
-    width: 90,
-    marginLeft: 30,
-    marginRight: 30,
-    resizeMode: Image.resizeMode.contain,
-    backgroundColor: '#fff',
-    transform: [{ rotate: '10deg'}],
-    borderWidth: 1,
-    borderColor: '#000',
-  },
-  imageIn5:{
-    height: 90,
-    width: 90,
-    marginLeft: 30,
-    marginRight: 30,
-    resizeMode: Image.resizeMode.contain,
-    backgroundColor: '#fff',
-    transform: [{ rotate: '-2deg'}],
     borderWidth: 1,
     borderColor: '#000',
   },
   imageMain:{
     height: 100,
     width: 150,
-    marginLeft: 30,
-    marginRight: 30,
+    marginLeft: 20,
+    marginRight: 20,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#FBC02D',
     borderWidth: 1,

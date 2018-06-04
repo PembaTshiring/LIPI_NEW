@@ -11,7 +11,7 @@ componentDidMount() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg4.jpg')} style={styles.bg}>
+      <ImageBackground source={require('./app/assets/images/background/bg2.jpg')} style={styles.bg}>
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -31,12 +31,23 @@ componentDidMount() {
             />
            </View>
         </View>
-        <View style={styles.down}> 
+      
+        <View style={styles.down}>
+          <TouchableOpacity>
+          <View style={styles.back}>
+          <Ionicons name="md-arrow-dropleft" size={32} color="green" />
+          </View>
+          </TouchableOpacity>
         <View style={styles.downImage}>     
         <Image style={styles.image2}
           source={require('./app/assets/images/vowels/4.png')}
             />
           </View>
+          <TouchableOpacity>
+          <View style={styles.next}>
+          <Ionicons name="md-arrow-dropright" size={32} color="green" />
+          </View>
+          </TouchableOpacity>
         </View>
   
         </View>  
@@ -76,17 +87,20 @@ const styles = StyleSheet.create({
     
   },
   up:{
-    width: '50%',
+    width: '70%',
+    height: '50%',
     flexDirection: 'row',
     padding: 2,
     justifyContent: 'center',
 
   },
   down:{
-    width: '50%',
+    width: '70%',
+    height: '50%',
     flexDirection: 'row',
     padding: 2,
     justifyContent: 'center',
+    alignItems: 'center',
 
   },
   upImage:{
@@ -102,23 +116,38 @@ const styles = StyleSheet.create({
     justifyContent:'center',
 },
   color:{
-    width: 100,
-    height:100,
+    width: 150,
+    height:150,
     backgroundColor: '#fd71ae',
     margin: 5,
   },
   image:{
-    width: 100,
-    height:100,
+    width: 150,
+    height:150,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#000',
     margin: 5,
   },
   image2:{
-    width: 200,
+    width: 300,
     height:100,
     resizeMode: Image.resizeMode.contain,
     backgroundColor: '#000',
   },
-  
+  back:{
+    width:50,
+    height:50,
+    backgroundColor: '#fff',
+    justifyContent:'center',
+    alignItems: 'center',
+    margin: 5,
+  },
+  next:{
+    width:50,
+    height:50,
+    backgroundColor: '#fff',
+    justifyContent:'center',
+    alignItems: 'center',
+    margin: 5,
+  },
 });
