@@ -5,13 +5,12 @@ import { Text,
     TouchableOpacity,
     StyleSheet,    
     Dimensions,
-    Image,
-   
-} from 'react-native'
+    Image
+} from 'react-native';
 import { Ionicons,FontAwesome } from '@expo/vector-icons';
 const { width, height } = Dimensions.get("window");
 
-export default class Aboutus extends Component {
+export default class AboutUs extends Component {
     
     constructor () {
         super() 
@@ -29,9 +28,12 @@ export default class Aboutus extends Component {
     return (
      
       <View style={styles.container}>
-      <View style={styles.top}>
-      <Ionicons name="md-arrow-back" size={33} />
-      </View>
+      <TouchableOpacity onPress={() => this.props.navigation.navigate("Setting")} style={styles.top}>
+        <View >
+          <Ionicons name="md-arrow-back" size={33} />
+        </View>
+      </TouchableOpacity>
+      
           <View style={styles.header}>
             <Text style={styles.text}>LIPI APP </Text>
           </View>
@@ -72,7 +74,7 @@ const styles = StyleSheet.create({
       height: '15%',
       width: '100%',
       justifyContent:'center',
-      marginLeft: '10%',
+      // marginLeft: '10%',
     },
     
   });

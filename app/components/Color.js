@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, StatusBar, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default class App extends React.Component {
+export default class Color extends React.Component {
   //hiding statusBar
 componentDidMount() {
   StatusBar.setHidden(true);
@@ -11,7 +11,10 @@ componentDidMount() {
     return (
       
       <View style={styles.container}>
-      <ImageBackground source={require('./app/assets/images/background/bg2.jpg')} style={styles.bg}>
+
+      <ImageBackground source={require('./app/assets/images/background/bg4.jpg')} style={styles.bg}>
+
+    
         <View style={styles.top}>
           <View style={styles.setting}>
           <Ionicons name='md-settings' size={33} color="#fff" borderWidth={3} />
@@ -27,7 +30,7 @@ componentDidMount() {
 
             </View>
             <Image style={styles.image}
-          source={require('./app/assets/images/color/rose.jpg')}
+          source={require('../assets/images/color/rose.jpg')}
             />
            </View>
         </View>
@@ -40,7 +43,7 @@ componentDidMount() {
           </TouchableOpacity>
         <View style={styles.downImage}>     
         <Image style={styles.image2}
-          source={require('./app/assets/images/vowels/4.png')}
+          source={require('../assets/images/vowels/4.png')}
             />
           </View>
           <TouchableOpacity>
@@ -76,7 +79,7 @@ const styles = StyleSheet.create({
   setting:{
     height: 30,
     width:30,
-    marginRight: 15,
+    // marginRight: 15,
     alignSelf: 'flex-end', 
   },
   content:{

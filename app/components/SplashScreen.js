@@ -73,15 +73,15 @@ animate () {
         <View style={styles.container}>
 
         <View style={styles.float}>
-           <Animated.Image
-           source={require("../assets/images/characters/cloud.png")}
+            <Animated.Image
+            source={require("../assets/images/characters/cloud.png")}
         style={{
           marginRight:movingMargin,
           height: 100,
           width: 160,
           }} />
           { <Animated.Image
-           source={require("../assets/images/characters/cloud.png")}
+            source={require("../assets/images/characters/cloud.png")}
         style={{
           marginLeft:movingMargins,
           height: 100,
@@ -99,7 +99,7 @@ animate () {
       </Animated.Text>
           </View>
         <View style={styles.overlay}>
-                <TouchableOpacity onPress={() => this.props.navigation.navigate("Vowels")}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate("MainPage")}>
                   <Image source={require("../assets/images/buttons/playButton.png")} style={styles.btn}/>
                 </TouchableOpacity>
               </View>

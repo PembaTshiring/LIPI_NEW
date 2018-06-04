@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View , StyleSheet, Switch, Button,Dimensions,TouchableOpacity, ImageBackground, StatusBar} from 'react-native';
 import { Constants } from 'expo';
 import { Ionicons,FontAwesome } from '@expo/vector-icons';
-import Switch from './Switch';
+import Switch1 from './Switch';
 
 // import About from './About.js'
 
@@ -42,16 +42,18 @@ export default class Setting extends Component {
         <Text style={{textAlign:'center',  color:'white',fontSize:30}}>Setting</Text>
         </View>
           <View style={styles.setting}>
-          <Ionicons style={{marginRight:20}} name='md-home' size={33} color="#fff" />
+            <TouchableOpacity onPress={() => this.props.navigation.navigate("MainPage")}>
+              <Ionicons  name='md-home' size={33} color="#fff" />
+            </TouchableOpacity>
         </View>
       </View>
         <View style={styles.switch}>
-          <SwitchExample
+          <Switch1
                toggleSwitch1 = {this.toggleSwitch1}
                toggleSwitch2 = {this.toggleSwitch2}
                switch1Value = {this.state.switch1Value}
                switch2Value = {this.state.switch2Value}/>
-               <TouchableOpacity>
+               <TouchableOpacity onPress={() => this.props.navigation.navigate("AboutUs")}>
                <View style={styles.about}>
                <Text style={{textAlign:'center', color:'#fff' }}> About Us  <Ionicons name='md-information-circle' size={30} color="#fff" /></Text>
                </View>
